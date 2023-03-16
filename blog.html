@@ -53,15 +53,21 @@
                         remains inside sessionStorage. But website, browser or pc is closed the data is not remains.
                         sessionStorage has expiration date.</p>
                     <p>3. cookies: cookies is browser api. It is used for storing data, such as: login information,
-                        users activity etc up to a certain time. There are two types of cookies, first party cookie and
-                        third party cookie. cookie has expiration date.
+                        users activity etc up to a certain time. The data is stored in the browser and server both.
+                        There are two types of cookies, first party cookie and third party cookie. cookie has
+                        expiration
+                        date.
                     </p>
                 </div>
             </article>
             <article class="my-2">
                 <h2 class="text-2xl md:text-3xl text-orange-600">3. What is Event loop and how does it work?</h2>
                 <div>
-                    <p>event loop</p>
+                    <p>Event loop: JavaScript code and data remain in the heap. The synchronous code, such as:
+                        console.log, function, function-call, etc in the call stack run as normal. When synchronous code
+                        is running then if we get asynchronous code, such as: setTimeout, setInterval, fetch, etc then
+                        those codes are added to event queue and waiting to be run. The asynchronous codes are executed,
+                        after the synchronous codes are executed.</p>
                 </div>
             </article>
         </section>
