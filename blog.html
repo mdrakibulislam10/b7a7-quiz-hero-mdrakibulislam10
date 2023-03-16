@@ -25,8 +25,8 @@
     <main>
         <section class="mx-4 md:mx-36">
             <article class="my-2">
-                <h2 class="text-2xl md:text-3xl text-orange-600">1. What's the difference between map, forEach,
-                    filter and find?</h2>
+                <h2 class="text-2xl md:text-3xl text-orange-600">1. What's the difference between map(), forEach(),
+                    filter() and find()?</h2>
                 <div>
                     <p>1. map(): map is array method. Looping over each element of an array and does something then it
                         returns results inside a new array. If need results later then we will use map.</p>
@@ -62,12 +62,23 @@
             </article>
             <article class="my-2">
                 <h2 class="text-2xl md:text-3xl text-orange-600">3. What is Event loop and how does it work?</h2>
+                <p>Event loop: JavaScript code and data remain in the heap. The synchronous code, such as:
+                    console.log, function, function-call, etc in the call stack run as normal. When synchronous code
+                    is running then if we get asynchronous code, such as: setTimeout, setInterval, fetch, etc then
+                    those codes are added to event queue and waiting to be run. The asynchronous codes are executed,
+                    after the synchronous codes are executed.</p>
+            </article>
+
+            <article class="mb-4 mt-8">
+                <h2 class="text-2xl md:text-3xl text-purple-600"><b>#</b> What the quizTimer() and chooseQuiz()
+                    functions work. how it's works?</h2>
                 <div>
-                    <p>Event loop: JavaScript code and data remain in the heap. The synchronous code, such as:
-                        console.log, function, function-call, etc in the call stack run as normal. When synchronous code
-                        is running then if we get asynchronous code, such as: setTimeout, setInterval, fetch, etc then
-                        those codes are added to event queue and waiting to be run. The asynchronous codes are executed,
-                        after the synchronous codes are executed.</p>
+                    <p>1. quizTimer(): quizTimer is a function. This function shows how much time it takes us to answer
+                        the quiz. Time counting starts after three seconds clicking the 'start quiz' button. The time is
+                        incremented by setInterval() method. Get element from DOM and time is displayed on UI with
+                        innerHTML. After answering all the quizzes, clicking on the submit button will stop the time
+                        counting. Timing is stopped by clearInterval() method.</p>
+                    <p>2. chooseQuiz():</p>
                 </div>
             </article>
         </section>
