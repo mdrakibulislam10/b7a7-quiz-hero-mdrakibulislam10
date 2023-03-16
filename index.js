@@ -183,3 +183,6 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// go to blog page| blog btn
+const blogBtn = () => location.assign("blog.html");
