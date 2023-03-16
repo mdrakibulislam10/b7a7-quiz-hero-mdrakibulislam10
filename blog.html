@@ -28,15 +28,18 @@
                 <h2 class="text-2xl md:text-3xl text-orange-600">1. What's the difference between map(), forEach(),
                     filter() and find()?</h2>
                 <div>
-                    <p>1. map(): map is array method. Looping over each element of an array and does something then it
+                    <p><b>1. map():</b> map is array method. Looping over each element of an array and does something
+                        then it
                         returns results inside a new array. If need results later then we will use map.</p>
-                    <p>2. forEach(): forEach is array method. Looping over each element of an array and does something
+                    <p><b>2. forEach():</b> forEach is array method. Looping over each element of an array and does
+                        something
                         directly. forEach doesn't return any valid results. forEach returns undefined. If don't need
                         results later then we will use forEach.</p>
-                    <p>3. filter(): filter is array method. Looping over each element of an array and does check with
+                    <p><b>3. filter():</b> filter is array method. Looping over each element of an array and does check
+                        with
                         condition. If condition is meets then returns all element inside a new array the elements that
                         fulfilled the condition.</p>
-                    <p>4. find(): find is array method. Looping over each element of an array and does check with
+                    <p><b>4. find():</b> find is array method. Looping over each element of an array and does check with
                         condition. If condition is meets then returns only first element the elements that
                         fulfilled the condition.</p>
                 </div>
@@ -45,14 +48,17 @@
                 <h2 class="text-2xl md:text-3xl text-orange-600">2. What's the difference between localStorage,
                     sessionStorage, and cookies?</h2>
                 <div>
-                    <p>1. localStorage: localStorage is browser api. It is used for storing data that the user will
+                    <p><b>1. localStorage:</b> localStorage is browser api. It is used for storing data that the user
+                        will
                         need to access later. If the website, browser or pc is closed or reloaded, the data remains
                         inside localStorage. localStorage has no expiration date.</p>
-                    <p>2. sessionStorage: sessionStorage is browser api. It is used for storing data that the user will
+                    <p><b>2. sessionStorage:</b> sessionStorage is browser api. It is used for storing data that the
+                        user will
                         need to access up to a certain time. If the website or browser reloaded, the data
                         remains inside sessionStorage. But website, browser or pc is closed the data is not remains.
                         sessionStorage has expiration date.</p>
-                    <p>3. cookies: cookies is browser api. It is used for storing data, such as: login information,
+                    <p><b>3. cookies:</b> cookies is browser api. It is used for storing data, such as: login
+                        information,
                         users activity etc up to a certain time. The data is stored in the browser and server both.
                         There are two types of cookies, first party cookie and third party cookie. cookie has
                         expiration
@@ -62,7 +68,7 @@
             </article>
             <article class="my-2">
                 <h2 class="text-2xl md:text-3xl text-orange-600">3. What is Event loop and how does it work?</h2>
-                <p>Event loop: JavaScript code and data remain in the heap. The synchronous code, such as:
+                <p><b>Event loop:</b> JavaScript code and data remain in the heap. The synchronous code, such as:
                     console.log, function, function-call, etc in the call stack run as normal. When synchronous code
                     is running then if we get asynchronous code, such as: setTimeout, setInterval, fetch, etc then
                     those codes are added to event queue and waiting to be run. The asynchronous codes are executed,
@@ -70,15 +76,21 @@
             </article>
 
             <article class="mb-4 mt-8">
-                <h2 class="text-2xl md:text-3xl text-purple-600"><b>#</b> What the quizTimer() and chooseQuiz()
-                    functions work. how it's works?</h2>
+                <h2 class="text-2xl md:text-3xl text-purple-600"><b>#</b> What is quizTimer() and chooseQuiz()
+                    function? how it's works?</h2>
                 <div>
-                    <p>1. quizTimer(): quizTimer is a function. This function shows how much time it takes us to answer
+                    <p><b>1. quizTimer():</b> quizTimer is a function. This function shows how much time it takes us to
+                        answer
                         the quiz. Time counting starts after three seconds clicking the 'start quiz' button. The time is
                         incremented by setInterval() method. Get element from DOM and time is displayed on UI with
-                        innerHTML. After answering all the quizzes, clicking on the submit button will stop the time
+                        innerHTML. After answering all the quizzes, clicking on the 'submit quiz' button will stop the
+                        time
                         counting. Timing is stopped by clearInterval() method.</p>
-                    <p>2. chooseQuiz():</p>
+                    <p><b>2. chooseQuiz():</b> chooseQuiz is a event handler function. This function is called from quiz
+                        option by onclick() event. The chooseQuiz function received as a parameter, the option that is
+                        clicked. Then after answering all the quizzes, if you click on the 'submit quiz' button, the
+                        answers of
+                        the quizzes will be submitted.</p>
                 </div>
             </article>
         </section>
